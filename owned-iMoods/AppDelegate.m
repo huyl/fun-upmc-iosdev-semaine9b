@@ -7,12 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "HoodTableViewController.h"
+
+@interface AppDelegate ()
+@property (nonatomic, strong) MoodViewController *moodVC;
+@end
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    HoodTableViewController *hoodVC = [[HoodTableViewController alloc] init];
+    UINavigationController *mainNVC = [[UINavigationController alloc] initWithRootViewController:hoodVC];
+    
+    MoodViewController *moodVC = [[MoodViewController alloc] init];
+    self.moodVC = moodVC;
+    hoodVC.moodVC = moodVC;
+    
+    [_window setRootViewController:mainNVC];
     return YES;
 }
 							

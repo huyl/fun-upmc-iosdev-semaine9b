@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MoodViewController : UIViewController <UIPickerViewDelegate>
+
++ (NSArray *)moods;
++ (NSArray *)moodColors;
 
 @end
