@@ -31,7 +31,7 @@ Fonctionnalité :
 
 - Bonjour
   - sur Wi-Fi ou Bluetooth
-  - Re-commence après revenir du background
+  - Re-commence après revenir de l'arrière-plan
   - UUID pour s'identifier parmi les services
 - UIPickerView
 - Settings Bundle
